@@ -1,0 +1,16 @@
+h1 {
+    font-family: 'Shalimar', cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: teal;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+main {
+    background-color: white;
+}
