@@ -1,0 +1,80 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box; /*default border box*/
+    }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  background-color: teal;
+  color: black;
+}
+
+/*
+
+-- Longform--
+margin-top: 40px;
+margin-right: 40px;
+margin-bottom: 40px;
+margin-left: 40px;
+
+-- Shorthand ---
+margin:40px;
+
+-- Longform --
+margin-top: 40px;
+margin-right: 10px;
+margin-bottom: 30px;
+margin-left: 15px;
+
+margin:40px 10px 30px 15px;
+
+
+-- Two Value Shorthand Top/Bottom | Left/Right --
+margin: 40px auto;
+
+space in the inside = padding
+space on the outside = margin 
+
+*/
+
+main {
+  background-color: white;
+  width: 80vw;
+  max-width: 1140px;
+  margin:40px auto; /*center block element*/
+  border: 2px solid wheat;
+  border-radius: 4px; /*corners of the box" */
+}
+
+header.primary {
+  background-color: pink;
+  padding:20px;
+  background-image: url(../img/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hrgroup h1, .hrgroup h2 {
+  margin: 0;
+}
+
+.hgroup h1 a{
+  color: white;
+  text-shadow: 2px 1px wheat;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hgroup h2 {
+  color: white;
+  text-shadow: 2px 1px wheat;
+  font-size: 1.8rem;
+
+}
