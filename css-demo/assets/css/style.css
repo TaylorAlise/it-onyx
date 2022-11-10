@@ -15,6 +15,20 @@ body {
   color: black;
 }
 
+.container{
+  margin: auto;
+  padding: 25px;
+}
+
+.img-right{
+  float: right;
+  border: 2px solid #FF0BAB;
+  padding: 5px;
+  border-radius: 20px 0;
+  max-width: calc(50% - 20px);
+  margin: 20px 0 20px 20px;
+}
+
 /*
 
 -- Longform--
@@ -58,6 +72,18 @@ header.primary {
   background-image: url(../img/bg_1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+
+header.primary .hgroup{
+  width: 60%;
+}
+
+header.primary nav {
+  width: 20%;
 }
 
 .hrgroup h1, .hrgroup h2 {
@@ -76,4 +102,41 @@ header.primary {
   color: white;
   text-shadow: 2px 1px wheat;
   font-size: 1.8rem;
+}
+
+header.primary nav ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+header.primary nav ul a{
+  display: block;
+  background-color: wheat;
+  color: aliceblue;
+  padding: 10px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  border-radius: 20px 0;
+  border-right: 10px solid white;
+  text-decoration: none;
+  text-align: right;
+  transition: .75s;
+}
+
+header.primary nav a:hover {
+  background-color: #FF0BAB;
+  text-decoration: underline;
+}
+
+#content {
+  line-height: 1.8; /*line spacing */
+}
+
+
+#content h2, h3 {
+  color: black;
+  border-left: 7.5px solid #FF0BAB;
+  padding: 5px 7.5px;
+  border-radius: 15px 0;
 }
