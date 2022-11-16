@@ -15,6 +15,11 @@ body {
   color: black;
 }
 
+/*------------Utility Class----------------- */
+img{
+  max-width: 100%;
+}
+
 .container{
   margin: auto;
   padding: 25px;
@@ -114,8 +119,8 @@ header.primary nav ul a{
   display: block;
   background-color: wheat;
   color: aliceblue;
+  text-shadow:2px 2px teal;
   padding: 10px;
-  border: 1px solid white;
   margin-bottom: 10px;
   border-radius: 20px 0;
   border-right: 10px solid white;
@@ -134,9 +139,76 @@ header.primary nav a:hover {
 }
 
 
-#content h2, h3 {
+#content h2, h3{
   color: black;
   border-left: 7.5px solid #FF0BAB;
   padding: 5px 7.5px;
   border-radius: 15px 0;
+}
+
+#blog{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(16,77,115,1) 100%);
+  padding: 20px 0;
+  border-top: 6px double #0a96A6;
+}
+
+#blog > h2{
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  font-size: 2.2rem;
+  margin-left: 20px;
+
+}
+
+#blog article.post{
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "figure header"
+    "figure post-content"
+    "figure footer";
+  grid-gap: 20px;
+}
+
+#blog figure{
+  margin: 0;
+  grid-area: figure;
+}
+
+#blog header{
+  grid-area: header;
+
+}
+
+#blog .post-content{
+  grid-area: post-content;
+}
+
+#blog footer{
+  grid-area: footer;
+}
+
+aside .container{
+  display:flex;
+}
+
+aside article.widget{
+  flex:0 0 50%;
+}
+
+aside .widget:first-of-type{
+  border-right: 1px dotted wheat;
+  padding-right: 40px;
+
+
+}
+
+aside .widget:last-of-type{
+  padding-left: 40px;
+  
+
 }
