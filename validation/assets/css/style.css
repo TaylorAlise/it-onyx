@@ -1,9 +1,9 @@
 
-form label {
+label {
     display: inline-block;
-    width: 150px;
+    /* width: 2px; */
     text-align: right;
-    padding: 5px;
+    padding: 8px;
     font-weight: bold;
 }
 
